@@ -3,6 +3,7 @@ Készítsd el az előző feladat azon változatát ahol megadjuk az óraszámot 
 Csak az adott órára vonatkozó hőmérséklettel térjen vissza a függvény.
 */
 
+const locations = require('../locations.json');
 const APIAddress = 'https://archive-api.open-meteo.com/v1/archive?';
 const xhttp = XMLHttpRequest();
 async function f2(lat, long, timeStr, hour){

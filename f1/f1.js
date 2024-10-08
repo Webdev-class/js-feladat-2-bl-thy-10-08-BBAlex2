@@ -1,4 +1,5 @@
 
+const locations = require('../locations.json');
 const APIAddress = 'https://archive-api.open-meteo.com/v1/archive?';
 const xhttp = new XMLHttpRequest();
 async function f1 (lat, long, timeStr) {
