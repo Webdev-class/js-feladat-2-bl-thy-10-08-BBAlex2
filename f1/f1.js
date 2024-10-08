@@ -1,5 +1,6 @@
 
 const APIAddress = 'https://archive-api.open-meteo.com/v1/archive?';
+const xhttp = new XMLHttpRequest();
 async function f1 (lat, long, timeStr) {
     xhttp.open("GET",`${APIAddress}latitude=${lat}&longitude=${long}&start_date=${timeStr}&end_date=${timeStr}&hourly=temperature_2m`);
     xhttp.onload = function(load){

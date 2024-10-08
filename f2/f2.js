@@ -4,6 +4,7 @@ Csak az adott órára vonatkozó hőmérséklettel térjen vissza a függvény.
 */
 
 const APIAddress = 'https://archive-api.open-meteo.com/v1/archive?';
+const xhttp = new XMLHttpRequest();
 async function f2(lat, long, timeStr, hour){
     xhttp.open("GET",`${APIAddress}latitude=${lat}&longitude=${long}&start_date=${timeStr}&end_date=${timeStr}&hourly=temperature_2m`);
     xhttp.onload = function(load){
